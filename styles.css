@@ -1,0 +1,51 @@
+/* Global Styles */
+body {
+    /* background-color: black; */
+    margin: 0; /* Reseta a margem externa do body para 0 */
+    padding: 0; /* Reseta o preenchimento interno do body para 0 */
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    color: white; /* Cor do texto */
+    position: relative; /* Define a posição como relativa para permitir posicionamento absoluto de elementos filhos */
+}
+
+/* Container with the background image */
+.container {
+    background: url('./assets/background.jpg') no-repeat center center/cover; /* Define a imagem de fundo, centraliza, não repete e cobre todo o container */
+    min-height: 100vh; /* Define a altura mínima do container como 100% da viewport height */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+  
+/* Content div for text and button */
+.content {
+    text-align: center; /* Centraliza o texto dentro da div */
+    background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo como preto com 50% de opacidade */
+    padding: 1.25rem 2.5rem; /* Define o preenchimento interno da div */
+    border-radius: 8px; /* Define o raio da borda para arredondar os cantos */
+}
+  
+.content h2 {
+    margin-bottom: 1.25rem; /* Define a margem inferior do título h2 */
+}
+  
+/* Button Styles */
+button {
+    background-color: #ff1b7b; /* Define a cor de fundo do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 0.625rem 1.25rem; /* Define o preenchimento interno do botão */
+    font-size: 1.2em; /* Define o tamanho da fonte do texto do botão */
+    color: white; /* Define a cor do texto do botão como branco */
+    cursor: pointer; /* Define o cursor como uma mãozinha ao passar por cima */
+
+    /* Adiciona uma transição suave para a cor de fundo */
+    transition: background-color 0.3s ease; 
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+  
+button:hover {
+    /* Define a cor de fundo do botão como verde ao passar o mouse */
+    background-color: #1ABC9C;
+    transform: scale(1.1);
+}
